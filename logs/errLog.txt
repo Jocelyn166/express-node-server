@@ -1,1 +1,23 @@
-20231119	13:47:02	3a2a26df-e82b-4d36-a7d7-46a9f3457a25	TypeError: fsPromises.readFil is not a function
+20231119	17:12:28	2dd196ae-ecfa-48d6-908e-73e2b04946d1	Error:Not allowed by CORS
+20231119	17:12:59	a41ebcf3-d1c4-4997-8ae7-bbceb310d677	Error	:Not allowed by CORS
+20231119	17:13:25	ff7d96b4-9538-4676-b3a3-d0238b9ecb6e	Error : Not allowed by CORS
+20231119	17:14:36	37b73c33-c47a-4709-be17-423a7ceef0b8	Error : Not allowed by CORS
+20231119	17:14:50	c0c9727e-05b7-48a4-9678-7f860f5983a9	Error : Not allowed by CORS
+20231119	17:15:11	f6c8c908-3685-4f0a-8369-a5e261e0b03c	TypeError : path must be a string to res.sendFile
+20231119	17:16:06	568d9aaf-5549-453d-b989-6ff3b2b007a8	TypeError : path must be a string to res.sendFile
+20231119	17:16:11	508e6362-69e9-47f9-959e-9be94c001c2e	TypeError : path must be a string to res.sendFile
+20231119	17:17:28	9653f1c2-984a-4352-8e54-716179aa8eb3	TypeError : path must be a string to res.sendFile
+20231119	21:21:37	39bd8b13-937d-4cbf-857d-4947c1f9091b	Error : Not allowed by CORS
+20231119	21:21:39	b71323f0-59b8-43d0-838b-c72893caf5be	Error : Not allowed by CORS
+20231119	21:23:08	73ae56b4-4b4f-4d35-a696-cc73e891cdb9	ReferenceError : employees is not defined
+20231119	21:30:54	2e2cfe45-bb14-40f3-aa3a-e1b926e04708	SyntaxError : Unexpected token " in JSON at position 0
+20231119	21:35:41	9f5e6a95-31c9-46d6-945e-290bf491a3b4	TypeError : Cannot read properties of undefined (reading 'id')
+20231128	21:31:06	3cdd5a4d-033f-46e1-830a-feb17af4e8c1	Error : ENOENT: no such file or directory, stat '/Users/juanjuan/Desktop/react-series/node-server/routes/views/subdir/index.html'
+20231128	21:31:59	8c9d36cc-0fca-43a7-b9e5-2ee44b9489e1	Error : ENOENT: no such file or directory, stat '/Users/juanjuan/Desktop/react-series/node-server/routes/views/subdir/index.html'
+20231202	08:16:59	f7ce8ea1-f115-43f6-8a5b-20c0fbcdfdd9	TypeError : res.json(...).put is not a function
+20231202	08:17:48	18a72507-54c4-4ef2-b035-e0d0856b66c0	SyntaxError : Unexpected token " in JSON at position 0
+20231202	08:18:39	0d51576f-1913-463c-b5c6-3dfd96862bc0	SyntaxError : Unexpected token " in JSON at position 0
+20231202	08:24:48	886fd4da-a97f-4a38-b12c-2c0b5793f0f4	TypeError : res.json(...).put is not a function
+20231202	08:24:49	25f6cf90-c5d5-4178-91e3-b913ad23a3ae	TypeError : res.json(...).put is not a function
+20231202	08:24:49	167c361c-612d-4799-8633-98a6a9fe5e6b	TypeError : res.json(...).put is not a function
+20231202	09:47:05	9337f0e8-beab-4ad6-a8a7-be3183370c96	SyntaxError : Unexpected token " in JSON at position 0
