@@ -60,3 +60,5 @@ app.use(errorHandler);
 
 app.listen(PORT, ()=>console.log(`Server is running on port ${PORT}`));
 
+
+//expand the authorization process by adding user roles with specific permissions to our api authorization process
