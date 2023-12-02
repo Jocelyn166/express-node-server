@@ -5,10 +5,17 @@ const cors = require('cors');
 const corsOptions = require('./config/corsOptions');
 const {logger} = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
+const verifyJWT = require('./middleware/verifyJWT');
+const cookieParser = require('cookie-parser');
+const credentials = require('./middleware/credentials');
 const PORT = process.env.PORT || 3500;
 
 //custom middleware logger
 app.use(logger);
+
+//handle options credentials check - before CORS
+//and fetch cookies credentials requirement
+app.use(credentials);
 
 // cross origin resources sharing
 app.use(cors(corsOptions));
@@ -19,6 +26,9 @@ app.use(express.urlencoded({extended: false}));
 // built-in middleware for json
 app.use(express.json());
 
+// middleware for cookies
+app.use(cookieParser);
+
 //serve static files
 app.use('/', express.static(path.join(__dirname, '/public')));
 app.use('/subdir', express.static(path.join(__dirname, '/public')));
@@ -28,6 +38,10 @@ app.use('/', require('./routes/root'));
 app.use('/subdir', require('./routes/subdir'));
 app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
+app.use('/refresh', require('./routes/refresh'));
+app.use('/logout', require('./routes/logout'));
+
+app.use(verifyJWT);//waterfall, so everything after this line will use the verified jwt middleware
 app.use('/employees', require('./routes/api/employees'));
 
 
@@ -45,5 +59,4 @@ app.all('*', (req, res)=>{
 app.use(errorHandler);
 
 app.listen(PORT, ()=>console.log(`Server is running on port ${PORT}`));
-
 
