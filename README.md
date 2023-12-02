@@ -12,3 +12,8 @@ main features in this repo:
    getAllEmployees, createNewEmployee, updateEmployee, deleteEmployee, getEmployee methods with get, put, delete, and post methods to work on the data
 
 4. organize the node.js and express api server with the model view controller design pattern
+5. use require('crypto').randomBytes(64).toString('hex') to generate accessToken, and refreshToken secret, put the secret in .env, and .env in .gitignore file
+6. crete registerController file and authController file to handle user register and log in with username and password, use bcrypt.hash(pwd, 10) to hash the pwd that user use to register, use bcrypt.compare()to compare the pwd user login input with the password stored in DB
+7. after user handleLogin, we issue an accessToken and a refreshToken, we send the accessToken using JSON, we store the refreshToken in db which allow the user to log out, and we send the refreshToken using httpOnly cookie, which is not available to javascript. 
+8. create a JWT verification middleware, to check for the presence of a valid JWT in the "Authorization" header of the request, then add it to protect routes.
+9. create register, auth, refresh, logout routes, with JWT authentication
